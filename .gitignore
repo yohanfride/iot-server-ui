@@ -5,7 +5,7 @@
 # If you need to keep large files in Bitbucket, consider introducing
 # Git Large File Storage (Git LFS) as part of your workflow.
 #
-application/config/
+#application/config/
 vendor/
 *.zip
 # Learn more about .gitignore:
