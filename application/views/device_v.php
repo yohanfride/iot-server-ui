@@ -84,7 +84,7 @@
                 <td><?= ( empty($d->group_code_name) || ($d->group_code_name=="other") )?"non-group device":$device_group[$d->group_code_name]->name?></td>
                 <td><?= $d->information->location; ?></td>
                 <td><?= $d->information->purpose; ?></td>
-                <td><?= date( "Y-m-d H:i:s", $d->date_add->{'$date'}/1000); ?></td>
+                <td><?= date("Y-m-d H:i:s", (int)($d->date_add->{'$date'}/1000)); ?></td>
                 <td class="actions">
                   <a href="<?= base_url()?>device/data/<?= $d->device_code; ?>" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row"
                     data-toggle="tooltip" data-original-title="Show Chart View"><i class="icon md-chart" aria-hidden="true"></i></a>

@@ -65,7 +65,7 @@
                 </td>
                 <td><?= $d->information->purpose; ?></td>
                 <td><?= $d->information->detail; ?></td>
-                <td><?= date( "Y-m-d H:i:s", $d->date_add->{'$date'}/1000); ?></td>
+                <td><?= date("Y-m-d H:i:s", (int)($d->date_add->{'$date'}/1000)); ?></td>
                 <td class="actions">
                   <a href="<?= base_url()?>schema/data/<?= $d->schema_code; ?>" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row"
                     data-toggle="tooltip" data-original-title="Show Data" target="_blank"><i class="icon md-grid" aria-hidden="true"></i></a>
